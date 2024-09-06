@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mixio - Contact Us</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        color: #fcfcfc;
+        background-color: #111;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+      h1,
+      h2,
+      p,
+      label,
+      input,
+      textarea {
+        color: #fcfcfc;
+      }
+      form {
+        margin-top: 20px;
+      }
+      label {
+        display: block;
+        margin-bottom: 5px;
+      }
+      input,
+      textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #333;
+        border-radius: 5px;
+        box-sizing: border-box;
+        background-color: #222;
+        color: #fcfcfc;
+      }
+      input[type="submit"] {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      input[type="submit"]:hover {
+        background-color: #0056b3;
+      }
+      .faq {
+        margin-bottom: 20px;
+        padding-top: 40px;
+      }
+      .contact-us {
+        padding-top: 40px;
+      }
+      h1 {
+        font-size: 60px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Mixio</h1>
+    <h2>Support</h2>
+
+    <!-- <div class="faq">
+      <h2>FAQ</h2>
+      <ul>
+        <li>Q: How do I download the app?</li>
+        <p>
+          A: You can download the app from the App Store or Google Play Store.
+        </p>
+        <li>Q: Is the app available in multiple languages?</li>
+        <p>A: Yes, the app supports English and Spanish languages.</p>
+      </ul>
+    </div> -->
+
+    <h2 class="contact-us">Contact Us</h2>
+    <form
+      action="mailto:mixioappco@gmail.com"
+      method="post"
+      enctype="text/plain"
+    >
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="6" required></textarea>
+
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
